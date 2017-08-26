@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "response/common.proto";
+
+option java_multiple_files = true;
+
+package customer;
+service CustomerService {
+	rpc find(Name) returns (CustomerResponse){ }
+
+	rpc add(Customer) returns (CustomerResponse){ }
+
+  rpc list(response.EmptyParam) returns (CustomerListResponse){ }
+
+}
+
+message Name {
+	string name = 1;
+}
+
+message Customer {
+	int64 id = 1;
+	string name = 2;
+	int64 company = 3;
+}
+
+message CustomerResponse{
+	response.Response response = 1;
+	Customer customer = 2;
+}
+
+message CustomerListResponse {
+	response.Response response = 1;
+	repeated Customer customers = 2;
+}
