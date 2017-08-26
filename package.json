@@ -1,0 +1,9 @@
+{
+  "name": "grpc-sample-server",
+  "version": "1.0.0",
+  "description": "sample",
+  "main": "index.js",
+  "repository": "https://github.com/ReiiYuki/grpc-sample-server.git",
+  "author": "ReiiYuki",
+  "license": "MIT"
+}
