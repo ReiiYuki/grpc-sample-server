@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "response/common.proto";
+import "common.proto";
 
 option java_multiple_files = true;
 

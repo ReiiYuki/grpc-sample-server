@@ -8,7 +8,7 @@ function findCustomer(name) {
 			return {
 				response: {
 					statusCode: 2,
-					desc: 'Get'
+					desc: 'Get Customer'
 				},
 				customer: customerList[i]
 			}
@@ -22,7 +22,7 @@ function addCustomer(customer) {
 	return {
 		response: {
 			statusCode: 1,
-			desc: 'Add'
+			desc: 'Add Customer'
 		},
 		customer: customer
 	}
@@ -32,14 +32,14 @@ function listCustomer() {
 	return {
 		response: {
 			statusCode: 3,
-			desc: 'List'
+			desc: 'List Customer'
 		},
 		customers: customerList
 	}
 }
 
 export default {
-	find,
-	add,
-	list
+	findCustomer,
+	addCustomer,
+	listCustomer
 }

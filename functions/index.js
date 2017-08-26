@@ -1,5 +1,7 @@
-import CustomerFunction from './CustomerFunction'
+import CustomerFunctions from './CustomerFunctions'
+import CompanyFunctions from './CompanyFunctions'
 
 export default {
-	...CustomerFunction
+	CustomerFunctions,
+	CompanyFunctions
 }

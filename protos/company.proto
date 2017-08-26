@@ -1,16 +1,16 @@
 syntax = "proto3";
 
-import "response/common.proto";
+import "common.proto";
 
 option java_multiple_files = true;
 
 package company;
 service CompanyService {
-	rpc find(ID) returns (CompanyResponse){ }
+	rpc findCompany(ID) returns (CompanyResponse){ }
 
-	rpc add(Company) returns (CompanyResponse){ }
+	rpc addCompany(Company) returns (CompanyResponse){ }
 
-  rpc list(response.EmptyParam) returns (CompanyListResponse){ }
+  rpc listCompany(response.EmptyParam) returns (CompanyListResponse){ }
 
 }
 
@@ -25,10 +25,10 @@ message Company {
 
 message CompanyResponse{
 	response.Response response = 1;
-	Company customer = 2;
+	Company company = 2;
 }
 
 message CompanyListResponse {
 	response.Response response = 1;
-	repeated Company customers = 2;
+	repeated Company companies = 2;
 }
