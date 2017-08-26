@@ -6,11 +6,11 @@ option java_multiple_files = true;
 
 package customer;
 service CustomerService {
-	rpc find(Name) returns (CustomerResponse){ }
+	rpc findCustomer(Name) returns (CustomerResponse){ }
 
-	rpc add(Customer) returns (CustomerResponse){ }
+	rpc addCustomer(Customer) returns (CustomerResponse){ }
 
-  rpc list(response.EmptyParam) returns (CustomerListResponse){ }
+  rpc listCustomer(response.EmptyParam) returns (CustomerListResponse){ }
 
 }
 

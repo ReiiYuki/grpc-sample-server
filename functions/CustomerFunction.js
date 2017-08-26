@@ -2,7 +2,7 @@
 let customerList = []
 let id = 0
 
-function find(name) {
+function findCustomer(name) {
 	for (let i = 0;i<customerList.length;i++) {
 		if (customerList[i].name === name) {
 			return {
@@ -16,7 +16,7 @@ function find(name) {
 	}
 }
 
-function add(customer) {
+function addCustomer(customer) {
 	customer.id = id++
 	customerList.push(customer)
 	return {
@@ -28,7 +28,7 @@ function add(customer) {
 	}
 }
 
-function list() {
+function listCustomer() {
 	return {
 		response: {
 			statusCode: 3,

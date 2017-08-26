@@ -1,1 +1,3 @@
 import functions from './functions'
+
+console.log(functions);

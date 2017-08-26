@@ -7,6 +7,15 @@
   "author": "ReiiYuki",
   "license": "MIT",
   "dependencies": {
+    "babel-preset-stage-0": "^6.24.1",
     "grpc": "^1.4.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node"
   }
 }
