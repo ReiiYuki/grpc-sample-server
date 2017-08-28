@@ -12,6 +12,6 @@ let server = new grpc.Server()
 server.addService(customerProto.CustomerService.service,{...functions.CustomerFunctions})
 server.addService(companyProto.CompanyService.service,{...functions.CompanyFunctions})
 
-server.bind('localhost:50051', grpc.ServerCredentials.createInsecure());
+server.bind('127.0.0.1:50051', grpc.ServerCredentials.createInsecure());
 console.log('Server is starting at 50051 ...')
 server.start()

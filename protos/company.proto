@@ -12,10 +12,15 @@ service CompanyService {
 
   rpc listCompany(response.EmptyParam) returns (CompanyListResponse){ }
 
+	rpc listCompanyById(IDS) returns (CompanyListResponse){ }
 }
 
 message ID {
 	int64 id = 1;
+}
+
+message IDS {
+	repeated int64 ids = 1;
 }
 
 message Company {
